@@ -36,7 +36,7 @@ describe 'break word and punctuation'
     Expect wordword#break("Don't Panic") == "Don't Panic"
   end
 
-  it '只增加必要的空白'
-    Expect wordword#break('foo,bar,  baz,   baaa...fooo') == 'foo, bar,  baz,   baaa...fooo'
+  it '考慮重複的標點或空白'
+    Expect wordword#break('foo,bar,,baz,  qux,   hoge...piyo!?') == 'foo, bar,, baz,  qux,   hoge... piyo!?'
   end
 end
