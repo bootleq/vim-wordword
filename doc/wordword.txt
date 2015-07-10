@@ -30,10 +30,27 @@ CONFIGURATION                                         *wordword-configuration*
 General options                                     *wordword-general-options*
 
                                                            *g:loaded_wordword*
-g:loaded_wordword            (default: none) ~
+g:loaded_wordword       (default: none) ~
 
   Set to 1 to prevent this plugin from being loaded.
 
+                                             *g:wordword_break_on_punctuation*
+g:wordword_break_on_punctuation ~
+                        (default: none) ~
+
+  Set to 1 to put extra spaces between words and punctuations.
+  This ensures one space is added after below characters: >
+
+    ! , . : ; ?
+<
+  and surrounding spaces of parenthesis `()` will be added. For example: >
+
+    foo,bar(baz)qux
+<
+  will be converted to >
+
+    foo, bar (baz) qux
+<
 ------------------------------------------------------------------------------
 Operator                                                   *wordword-operator*
                                                    *<Plug>(operator-wordword)*
