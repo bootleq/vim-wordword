@@ -29,6 +29,7 @@ Features
 
 - A `wordword#break()` function which takes string and converts it with space added.
 - User operator (require [kana/vim-textobj-user][]).
+- (Optional) add space between word and punctuation, e.g.: `foo,bar` to `foo, bar`.
 
 
 Related / Reference

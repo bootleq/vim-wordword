@@ -9,6 +9,9 @@
 1 Were,you.rushing;or?were(you)dragging! I'm upset...Louder~
 2 Were,you.rushing;or?were(you)dragging! I'm upset...Louder~
 3 Were,you.rushing;or?were(you)dragging! I'm upset...Louder~
+4 foo,bar,,baz,  qux,   hoge...piyo
+5 foo,bar,,baz,  qux,   hoge...piyo
+6 foo,bar,,baz,  qux,   hoge...piyo
 
 # 全形文字
 
