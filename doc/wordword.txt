@@ -1,0 +1,53 @@
+*wordword.txt*                                      Put space on word boundary
+
+Version:    0.0.1
+Author:     bootleq <bootleq@gmail.com>
+License:    Public Domain
+
+==============================================================================
+CONTENTS                                                  *wordword-contents*
+
+    Introduction  .......................... |wordword-introduction|
+    Configuration  ......................... |wordword-configuration|
+      General options  ..................... |wordword-general-options|
+      Operator  ............................ |wordword-operator|
+
+==============================================================================
+INTRODUCTION                                           *wordword-introduction*
+
+Reading words without dividing is uncomfortable. >
+
+  word文字word
+
+Add word-boundry spaces to rescue. >
+
+  word 文字 word
+
+==============================================================================
+CONFIGURATION                                         *wordword-configuration*
+
+------------------------------------------------------------------------------
+General options                                     *wordword-general-options*
+
+                                                           *g:loaded_wordword*
+g:loaded_wordword            (default: none) ~
+
+  Set to 1 to prevent this plugin from being loaded.
+
+------------------------------------------------------------------------------
+Operator                                                   *wordword-operator*
+                                                   *<Plug>(operator-wordword)*
+
+If |vim-operator-user| is installed, a new |operator| become available.
+
+No default mapping is set, map it yourself: >
+
+  map gs <Plug>(operator-wordword)
+<
+then do `gsap` in normal mode will "do adding space on a paragraph".
+
+Ref: kana/vim-textobj-user
+https://github.com/kana/vim-textobj-user
+
+==============================================================================
+vim:tw=78:fo=tcroq2mM:et:sts=2:sw=2:ft=help:norl:
