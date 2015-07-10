@@ -6,6 +6,13 @@ let s:save_cpo = &cpoptions
 set cpoptions&vim
 
 
+" Interface: {{{
+
+silent! call operator#user#define('wordword', 'operator#wordword#break')
+
+" }}} Interface
+
+
 " Finish:  {{{
 
 let &cpoptions = s:save_cpo

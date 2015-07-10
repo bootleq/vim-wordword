@@ -3,8 +3,7 @@ TEST
 
 - Require [vim-flavor][], [vim-vspec][] and ruby.
 - `cd` to repository root, run `bundle install` as first time setup.
-- Run all test with `rake test`.
-- Or run single test with `vspec . t/format.vim` (change `format.vim` as you like).
+- Run tests with `vim-flavor test`.
   
 
 

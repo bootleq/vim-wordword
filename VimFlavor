@@ -1,1 +1,3 @@
-# No dependencies.
+flavor 'kana/vim-operator-user'
+
+# vim: filetype=ruby
