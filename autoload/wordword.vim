@@ -15,13 +15,15 @@ let s:PUNCTUATIONS = {
       \   ]
       \ }
 
+let s:ISKEYWORD = printf('@,%s-%s', char2nr('0'), char2nr('9'))
+
 " }}} Constants
 
 
 function! wordword#break(text)
   let t = a:text
   let iskeyword = &l:iskeyword
-  setlocal iskeyword=@
+  execute 'setlocal iskeyword=' . s:ISKEYWORD
 
   let t = substitute(t, '\>\<', '\0 ', 'g')
 

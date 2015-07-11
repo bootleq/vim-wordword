@@ -3,6 +3,10 @@ describe 'wordword#break'
     Expect wordword#break('但是all何night') == '但是 all 何 night'
   end
 
+  it '在中文和數字間增加空白'
+    Expect wordword#break('車6平4') == '車 6 平 4'
+  end
+
   it 'does not change iskeyword option value'
     setlocal iskeyword=A,B
     Expect wordword#break('但是all何night') == '但是 all 何 night'
