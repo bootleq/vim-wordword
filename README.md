@@ -1,5 +1,6 @@
 Word Word
 =========
+[![Build Status](https://travis-ci.org/bootleq/vim-wordword.svg?branch=master)](https://travis-ci.org/bootleq/vim-wordword)
 
 Reading words without dividing is uncomfortable.
 
