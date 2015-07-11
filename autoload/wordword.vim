@@ -25,7 +25,7 @@ function! wordword#break(text)
   let iskeyword = &l:iskeyword
   execute 'setlocal iskeyword=' . s:ISKEYWORD
 
-  let t = substitute(t, '\>\<', '\0 ', 'g')
+  let t = substitute(t, '\>\<.', ' \0', 'g')
 
   if get(g:, 'wordword_break_on_punctuation')
     let pattern = printf('[%s]\<', join(s:PUNCTUATIONS.before_space, ''))
