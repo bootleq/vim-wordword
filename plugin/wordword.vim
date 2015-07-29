@@ -10,6 +10,17 @@ set cpoptions&vim
 
 silent! call operator#user#define('wordword', 'operator#wordword#break')
 
+augroup wordword
+  autocmd!
+  if exists("##InsertCharPre")
+    autocmd InsertCharPre * call wordword#auto#insert_char_pre()
+  endif
+
+  if exists("##InsertLeave")
+    autocmd InsertLeave * call wordword#auto#insert_leave()
+  endif
+augroup END
+
 " }}} Interface
 
 
