@@ -32,6 +32,7 @@ Features
 - User operator (require [vim-textobj-user][] plugin by @kana).
 - Optionally try adding spaces between words and punctuations,
   e.g.: `foo,bar` to `foo, bar`.
+- Optionally auto adding spaces when typing.
 
 
 Related / Reference
@@ -42,6 +43,7 @@ Related / Reference
 - CSS4 [text spacing][css4-text-spacing] (unofficial proposal draft)
 - [中文文案排版指北][]
 - [hotoo/pangu.vim][]
+- [讓你的 emacs 自動在英文與中文之間加入空白 - coldnew's blog][blog coldnew/pangu-spacing.el]
 
 
 License
@@ -57,3 +59,4 @@ Release to public domain.
 [vim-textobj-user]: https://github.com/kana/vim-textobj-user
 [hotoo/pangu.vim]: https://github.com/hotoo/pangu.vim
 [中英文間是否需要一格空白 - MozTW 討論區]: https://forum.moztw.org/viewtopic.php?t=20449&amp;start=0
+[blog coldnew/pangu-spacing.el]: http://coldnew.github.io/blog/2013/05/20_5cbb7.html 
