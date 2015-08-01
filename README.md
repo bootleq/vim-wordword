@@ -32,6 +32,7 @@ Features
 - User operator (require [vim-textobj-user][] plugin by @kana).
 - Optionally try adding spaces between words and punctuations,
   e.g.: `foo,bar` to `foo, bar`.
+- Optionally auto adding spaces when typing.
 
 
 Related / Reference

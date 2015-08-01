@@ -11,6 +11,7 @@ CONTENTS                                                  *wordword-contents*
     Configuration  ......................... |wordword-configuration|
       General options  ..................... |wordword-general-options|
       Operator  ............................ |wordword-operator|
+      Auto Commands  ....................... |wordword-autocmds|
 
 ==============================================================================
 INTRODUCTION                                           *wordword-introduction*
@@ -66,5 +67,40 @@ then do `gsap` in normal mode will "do adding space on a paragraph".
 Ref: kana/vim-textobj-user
 https://github.com/kana/vim-textobj-user
 
+------------------------------------------------------------------------------
+Auto Commands                                              *wordword-autocmds*
+
+There are 'autocommand' settings for auto space-inserting when typing. 
+
+Functionality is rather basic, prefix spaces were well added, while suffix
+spaces were only added when leaving insert mode, hence may not accurate.
+
+By default no autocmd were set. Use below functions to set yourself.
+
+                                                    *wordword#auto#register()*
+                                                  *wordword#auto#unregister()*
+Set or remove autocmds for current buffer (our autocmds are always
+buffer-local).
+
+Accepts 'insert_char_pre' or 'insert_leave' as argument to only register
+single event.
+
+                                                          *wordword#auto#on()*
+Resume auto-inserting from previous pause.
+
+                                                         *wordword#auto#off()*
+Pause auto-inserting. (this doesn't remove autocmd settings)
+
+                                                      *wordword#auto#paused()*
+Get current pause status.
+
+Configuration example: >
+  call wordword#auto#register()  " always set autocmds, not recommand
+
+  augroup my_setting
+    autocmd!
+    autocmd FileType text call wordword#auto#register()
+  augroup END
+<
 ==============================================================================
 vim:tw=78:fo=tcroq2mM:et:sts=2:sw=2:ft=help:norl:
