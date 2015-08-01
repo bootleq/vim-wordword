@@ -21,19 +21,20 @@ When mixing two systems, for example `word文字word`, many people believe some
 spacing should appear between `word` and `文字` for readability, lead it seems
 like `word 文字 word`.
 
-We haven't developed a good solution for it yet, have to add whitespace by
-hand.  This plugin just comes to help doing it easier.
+We haven't developed a good solution to add space yet, but have to add
+whitespace by hand.  This plugin just comes to make it easier.
 
 
 Features
 --------
 
-- A `wordword#break()` function takes string and converts it into space-added version.
+- A `wordword#break()` function to convert string with spaces added.
 - User operator (require [vim-textobj-user][] plugin by @kana).
-- Optionally try adding spaces between words and punctuations,
+- Add spaces between words and punctuations,
   e.g.: `foo,bar` to `foo, bar`.
-- Optionally auto adding spaces when typing.
+- Automatically add spaces when typing.
 
+Most features were disabled by default, please read doc to configure yourself.
 
 Related / Reference
 -------------------
