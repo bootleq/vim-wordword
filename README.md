@@ -29,7 +29,7 @@ Features
 --------
 
 - A `wordword#break()` function to convert string with spaces added.
-- User operator (require [vim-textobj-user][] plugin by @kana).
+- User operator (require [vim-operator-user][] plugin by @kana).
 - Add spaces between words and punctuations,
   e.g.: `foo,bar` to `foo, bar`.
 - Automatically add spaces when typing.
@@ -57,7 +57,7 @@ Release to public domain.
 [vinta/paranoid-auto-spacing]: https://github.com/vinta/paranoid-auto-spacing
 [css4-text-spacing]: http://dev.w3.org/csswg/css-text-4/#spacing
 [中文文案排版指北]: https://github.com/sparanoid/chinese-copywriting-guidelines
-[vim-textobj-user]: https://github.com/kana/vim-textobj-user
+[vim-operator-user]: https://github.com/kana/vim-operator-user
 [hotoo/pangu.vim]: https://github.com/hotoo/pangu.vim
 [中英文間是否需要一格空白 - MozTW 討論區]: https://forum.moztw.org/viewtopic.php?t=20449&amp;start=0
 [blog coldnew/pangu-spacing.el]: http://coldnew.github.io/blog/2013/05/20_5cbb7.html 

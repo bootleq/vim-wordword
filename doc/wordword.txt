@@ -82,8 +82,8 @@ No default mapping is set, map it yourself: >
 <
 then do `gsap` in normal mode will "do adding space on a paragraph".
 
-Ref: kana/vim-textobj-user
-https://github.com/kana/vim-textobj-user
+Ref: kana/vim-operator-user
+https://github.com/kana/vim-operator-user
 
 ------------------------------------------------------------------------------
 Auto Commands                                              *wordword-autocmds*
